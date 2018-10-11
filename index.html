@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html class="app js no-touch no-android chrome no-firefox no-iemobile no-ie no-ie10 no-ie11 no-ios">
+
+<head>
+    <meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+    <title>俄罗斯哈伦快三</title>
+    <!--<meta name="keywords" content="俄罗斯哈伦快三">-->
+    <!--<meta name="description" content="俄罗斯哈伦快三 是专门以提供各种走势为主的专业网站，每期及时更新号码。">-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--<link type="text/css" rel="stylesheet" href="Public/css/style-chart-min.css">-->
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="Public/css/style.css" type="text/css" />
+    <script src="Public/js/jquery.min.js"></script>
+    <script src="Public/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Public/css/chart-min.css" type="text/css">
+    <script src="Public/js/boot-min.js" type="text/javascript"></script>
+    <script src="Public/js/ESUNChart-min.js" type="text/javascript"></script>
+    <script src="Public/js/jquery.fixedtableheader.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="Public/css/kuai3.css">
+    <!--<link rel="stylesheet" href="Public/css/fonts/fonts.css">-->
+    <script src="Public/js/video.js"></script>
+
+    <link href="Public/css/open.css" rel="stylesheet">
+
+    <!--<link type="text/css" rel="stylesheet" href="Public/css/iconfont.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="Public/css/iconfont.min.css" />-->
+    <link rel="stylesheet" href="Public/css/font-awesome/css/font-awesome.min.css">
+
+
+    <style>
+        #vedioContentWrap {
+            overflow: hidden;
+            width: 100%;
+        }
+        .vedioContent {
+            width: 1125px;
+            height: 780px;
+            margin: 0 auto;
+            transform-origin: top left;
+        }
+        .main{
+            padding-top: 0px;
+            padding-bottom: 25px;
+        }
+        .main b {
+            display: block;
+            float: left;
+        }
+        * {margin: 0;padding:0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-style:normal; -webkit-tap-highlight-color:transparent;}
+        body {font-size: 14px;min-height:320px;}
+        @media only screen and (min-width:320px) { footer{ zoom:1.00;} }
+        @media only screen and (min-width:360px) { footer{ zoom:1.05;} }
+        @media only screen and (min-width:375px) { footer{ zoom:1.10;} }
+        @media only screen and (min-width:400px) { footer{ zoom:1.15;} }
+        @media only screen and (min-width:413px) { footer{ zoom:1.20;} }
+        @media only screen and (min-width:426px) { footer{ zoom:1.25;} }
+        @media only screen and (min-width:464px) { footer{ zoom:1.30;} }
+        @media only screen and (min-width:480px) { footer{ zoom:1.35;} }
+        @media only screen and (min-width:496px) { footer{ zoom:1.40;} }
+        @media only screen and (min-width:544px) { footer{ zoom:1.45;} }
+        @media only screen and (min-width:560px) { footer{ zoom:1.50;} }
+        @media only screen and (min-width:576px) { footer{ zoom:1.55;} }
+        @media only screen and (min-width:600px) { footer{ zoom:1.50;} }
+        @media only screen and (min-width:720px) { footer{ zoom:1.60;} }
+        @media only screen and (min-width:768px) { footer{ zoom:1.80;} }
+        @media only screen and (min-width:1024px) { footer{ zoom:2.00;} }
+        @media only screen and (min-width:1280px) { footer{ zoom:2.50;} }
+        @media only screen and (min-width:1600px) { footer{ zoom:3.00;} }
+        footer{width:100%; background-color:#F2EFE6;text-align:center; position:fixed; bottom:0;z-index:18;}
+        footer div{margin: 0 auto;width:100%; text-align:center; display: -webkit-box; display: -moz-box; display: -ms-flexbox;display: -webkit-flex;  display: flex;}
+        footer div a{font-size: 0.8em;display:block;height:40px; line-height:15px;width:100%;  vertical-align:middle;margin: 2px 1px; background-color: #fff; color: #000;; -webkit-box-flex:1; -moz-box-flex:1; -webkit-flex:1; -ms-flex:1; flex:1;}
+        footer div a i{font-size: 2em;display:block;height:25px; line-height:25px;width:100%;}
+        footer div a:hover{color: #EB8807;text-decoration: none;}
+        .blueC{
+            color: #fff;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius:50%;
+        }
+
+        .getColor_3{
+            background-color: #1A86E1;
+        }
+        .getColor_4{
+            background-color: #ff3300;
+        }
+        .getColor_5{
+            background-color: #1A86E1;
+        }
+        .getColor_6{
+            background-color: #ff3300;
+        }
+        .getColor_7{
+            background-color: #1A86E1;
+        }
+        .getColor_8{
+            background-color: #ff3300;
+        }
+        .getColor_9{
+            background-color: #1A86E1;
+        }
+        .getColor_10{
+            background-color: #ff3300;
+        }
+        .getColor_11{
+            background-color: #1A86E1;
+        }
+        .getColor_12{
+            background-color: #ff3300;
+        }
+        .getColor_13{
+            background-color: #1A86E1;
+        }
+        .getColor_14{
+            background-color: #ff3300;
+        }
+        .getColor_15{
+            background-color: #1A86E1;
+        }
+        .getColor_16{
+            background-color: #ff3300;
+        }
+        .getColor_17{
+            background-color: #1A86E1;
+        }
+        .getColor_18{
+            background-color: #ff3300;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="container container-h bg-white scrollable wrapper wrapper-xxs">
+
+        <div style="display:none;">
+            <div class="lot-m clearfix">
+                <div class="col-md-4 col-sm-6 lot-latest text-center">
+                    <div class=" clearfix" style="display:inline-block;">
+                        <div class="pull-left t-logo">
+                            <!--<img src="Public/images/ruishi_logo.png" tppabs="http://www.xbypc28.com/Public/images/ruishi_logo.png" />-->
+                        </div>
+                        <div class="lot-section pull-left">
+                            <p>最新：
+                                <span id="qishu" style="color:red;">20180918064</span>期</p>
+
+                            <div class="lot-section-sel pull-left ng-isolate-scope" style="margin-top:-5px;">
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-sm border-radius0" id="prevBtn" onclick="selectQishu(-1)">&lt;</button>
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" class="btn btn-default btn-sm dropdown-toggle border-radius0 ng-binding">
+                                            <span id="selectQishu">20180918064</span>
+                                            <span class="caret h-caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-select" id="dropBox"></ul>
+                                    </div>
+                                    <button type="button" class="btn btn-default btn-sm border-radius0" disabled="true" id="nextBtn" onclick="selectQishu(1)">&gt;</button></div>
+
+                            </div>
+                        </div>
+                        <div class="pull-left t-logo">
+                            <img src="Public/images/ruishi.png" tppabs="http://www.xbypc28.com/Public/images/ruishi_logo.png" /></div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 open-cutdown no-padder">
+                    <!--这里的time是这是倒计时的时间-->
+                    <div class="opentime ng-isolate-scope" id="time"  time="100" style="display: inline-block;">
+                        <span>下一期:</span>
+                        <b id="shi" style="display:none;"></b>
+                        <span style="display:none;">时</span>
+                        <b id="min"></b><span>分</span>
+                        <b id="s"></b><span>秒</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 lot-result">
+                    <div id="result">
+                        <div class="r1">
+                            <span class="cyanBlue" id="resultA">6</span>
+                            <label class=""> </label>
+                            <span class="cyanBlue" id="resultB">6</span>
+                            <label class=""> </label>
+                            <span class="cyanBlue" id="resultC">4</span>
+                            <label class="">和值 </label>
+                            <span class="skyBlue" id="resultTotal">16</span></div>
+                        <div class="r2">
+                            <span class="badge blue-info">大</span>
+                            <span class="badge blue-info">双</span></div>
+                    </div>
+                    <span class="r3" id="waiting" style="display:none;">等待结果
+                        <!--<img src="Public/images/icon-status-status-dots-anim-16.gif" tppabs="http://www.xbypc28.com/Public/images/icon-status-status-dots-anim-16.gif">-->
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default m-b-none">
+            <div class="table-responsive tab-content" id="content-result" style="text-align: center">
+                <!--<audio class="dispnode" id="audioRing" src="/Public/sound/ring.wav"></audio>-->
+                <div id="vedioContentWrap">
+                    <div class="vedioContent">
+                        <div id="videobox">
+                            <div class="content">
+                                <div class="animate">
+                                    <div class="kuai3Animate">
+                                        <div class="bodybg"><img src="Public/img/bj.jpg"></div>
+                                        <div class="loading" style="display: none;">
+                                            <div class="loadtxt">
+                                                LOADING...
+                                            </div>
+                                        </div>
+                                        <div class="animate_content">
+                                            <div class="nameLogo"><img src="http://els.jinshapc.com/Public/img/jl_logo.png" alt=""></div>
+                                        </div>
+                                        <div class="position">
+                                            <div class="middle_div">
+                                                <span class="benqi">本期&nbsp;:&nbsp;<span class="nowDraw"></span></span>
+
+                                                <ul id="codetop">
+                                                    <li id="num1" class="hmlist"></li>
+                                                    <li id="num2" class="hmlist"></li>
+                                                    <li id="num3" class="hmlist"></li>
+                                                    <li id="sumNum" class="hmlist noright"></li>
+                                                    <li id="sumBigSmall" class="bigOsmall"></li>
+                                                    <li id="sumDanShuang" class="danOsmall"></li>
+                                                </ul>
+                                                <span class="addIcon1"></span>
+                                                <span class="addIcon2"></span>
+                                                <span class="equalIcon"></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="currentDraw">
+                                            <div class="dl">
+													<span class="nextDraw">
+														<span class="dot"></span>
+														<span>下期&nbsp;:</span>
+														<span id="drawIssue" class="draw"></span>
+													</span>
+                                                <span class="kai">
+														<span class="dot"></span>
+														<span>开奖：</span>
+														<span id="drawTime" class="kaitime"></span>
+													</span>
+                                            </div>
+                                            <div class="dr" id="soundBtn">
+                                                <!--<span id="spanbtn" class="sounds"></span>-->
+                                            </div>
+                                        </div>
+                                        <div class="timeBox">
+												<span class="linetime">
+													<span id="timetitle">倒计时</span>
+												</span>
+                                            <div>
+                                                <span id="hourtxt" class="hourtxt">00:00:00</span>
+                                                <span id="opening" class="hourtxt opening"><img src="Public/img/progress.gif"></span>
+                                                <audio class="dispnode" id="audioidB" loop="loop" src=""></audio>
+                                                <audio class="dispnode" id="audioidR" loop="loop" src=""></audio>
+                                            </div>
+                                            <ul class="linelist">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bones">
+                                            <ul id="code">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="top: 288px;z-index: 999;width: 100%;height: 30px;">
+    <table class="table table-border table-bordered table-striped">
+        <thead>
+        <tr class="text-c" style="background: #DCE0E3;">
+            <th style="width: 28%">期号</th>
+            <th style="width: 34%">开奖号码</th>
+            <th style="width: 15%">和值</th>
+            <th style="width: 23%">开奖时间</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<article class="main">
+    <table class="table table-border table-bordered table-striped" style="margin-bottom: 100px;">
+        <tbody class="dataIsCome" style="margin-top: 90px">
+            <tr class="text-c">
+                <td colspan="4" style="text-align: center">数据加载中，请稍后...</td>
+            </tr>
+        </tbody>
+        <tbody class="getData">
+        <tr class="text-c">
+            <td style="width: 28%">180918064</td>
+            <td style="width: 34%"><b class="orange">4</b><b class="orange">6</b><b class="orange">6</b></td>
+            <td style="width: 15%"><b class="orange">16</b></td>
+            <td style="width: 23%">19:30:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918063</td>
+            <td style="width: 34%"><b class="blue">2</b><b class="blue">4</b><b class="blue">5</b></td>
+            <td style="width: 15%"><b class="blue">11</b></td>
+            <td style="width: 23%">19:20:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918062</td>
+            <td style="width: 34%"><b class="orange">4</b><b class="orange">4</b><b class="orange">6</b></td>
+            <td style="width: 15%"><b class="orange">14</b></td>
+            <td style="width: 23%">19:10:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918061</td>
+            <td style="width: 34%"><b class="orange">2</b><b class="orange">6</b><b class="orange">6</b></td>
+            <td style="width: 15%"><b class="orange">14</b></td>
+            <td style="width: 23%">19:00:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918060</td>
+            <td style="width: 34%"><b class="blue">2</b><b class="blue">5</b><b class="blue">6</b></td>
+            <td style="width: 15%"><b class="blue">13</b></td>
+            <td style="width: 23%">18:50:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918059</td>
+            <td style="width: 34%"><b class="blue">1</b><b class="blue">2</b><b class="blue">6</b></td>
+            <td style="width: 15%"><b class="blue">9</b></td>
+            <td style="width: 23%">18:40:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918058</td>
+            <td style="width: 34%"><b class="orange">1</b><b class="orange">1</b><b class="orange">5</b></td>
+            <td style="width: 15%"><b class="orange">7</b></td>
+            <td style="width: 23%">18:30:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918057</td>
+            <td style="width: 34%"><b class="blue">2</b><b class="blue">3</b><b class="blue">6</b></td>
+            <td style="width: 15%"><b class="blue">11</b></td>
+            <td style="width: 23%">18:20:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918056</td>
+            <td style="width: 34%"><b class="blue">1</b><b class="blue">2</b><b class="blue">6</b></td>
+            <td style="width: 15%"><b class="blue">9</b></td>
+            <td style="width: 23%">18:10:18</td>
+        </tr>
+        <tr class="text-c">
+            <td style="width: 28%">180918055</td>
+            <td style="width: 34%"><b class="blue">1</b><b class="blue">4</b><b class="blue">5</b></td>
+            <td style="width: 15%"><b class="blue">10</b></td>
+            <td style="width: 23%">18:00:18</td>
+        </tr>
+        </tbody>
+    </table>
+</article>
+
+<footer>
+    <div>
+        <a href="index.html"><i class="fa fa-home fa-2x"></i>首页</a>
+        <a href="open/openDoor.html"><i class="fa fa-cny fa-2x"></i>开奖结果</a>
+        <a href="fundTok/fundTok.html"><i class="fa fa-line-chart fa-2x"></i>图表走势</a>
+        <a href="other/other.html"><i class="fa fa-fire fa-2x"></i>遗漏数据</a>
+    </div>
+</footer>
+<script>
+    var mker = null,ifopen =true ,gameOpen = false,storage = window.localStorage.getItem('ifopen');
+    if(!storage || storage == 'true'){
+        ifopen = true;
+    }else{
+        ifopen = false;
+        $('#spanbtn').removeClass("sounds").addClass("sounds2")
+    }
+    $(function() {
+        //从上面的设置中取到设置的时间
+        // var time = $('#time').attr('time');
+        // var str = $('#isEmty').attr('data');
+        var str = '2';
+        var time;
+        $('.dataIsCome').hide();
+        //第一次进入的时间判断距离开奖时间
+        // $.ajax({
+        //     url:'',
+        //     type:'',
+        //     success:function (data) {
+        //
+        //     },error:function (data) {
+        //
+        //     }
+        // })
+        var arry = {"status":1,"data":{"prev10":[{"date_time":"2018-09-28 10:00:00","no":"201809281000","number":"4,5,5","date":"2018-09-28","time":"10:00:00"},{"date_time":"2018-09-28 10:10:00","no":"201809281010","number":"6,3,4","date":"2018-09-28","time":"10:10:00"},{"date_time":"2018-09-28 10:20:00","no":"201809281020","number":"4,4,6","date":"2018-09-28","time":"10:20:00"},{"date_time":"2018-09-28 10:30:00","no":"201809281030","number":"3,3,4","date":"2018-09-28","time":"10:30:00"},{"date_time":"2018-09-28 10:40:00","no":"201809281040","number":"6,2,4","date":"2018-09-28","time":"10:40:00"},{"date_time":"2018-09-28 10:50:00","no":"201809281050","number":"4,6,4","date":"2018-09-28","time":"10:50:00"},{"date_time":"2018-09-28 11:00:00","no":"201809281100","number":"2,6,3","date":"2018-09-28","time":"11:00:00"},{"date_time":"2018-09-28 11:10:00","no":"201809281110","number":"5,3,6","date":"2018-09-28","time":"11:10:00"},{"date_time":"2018-09-28 11:20:00","no":"201809281120","number":"6,4,1","date":"2018-09-28","time":"11:20:00"},{"date_time":"2018-09-28 11:30:00","no":"201809281130","number":"6,5,4","date":"2018-09-28","time":"11:30:00"}],"next1":{"date_time":"2018-09-29 10:00:00","no":"201809291000","number":"2,4,5","date":"2018-09-29","time":"11:00:00"}},"message":"operate success"};
+        
+        console.log(arry.data.next1.time);
+        var backTime = arry.data.next1.time.split(':')[1];
+        console.log(backTime);
+        var timestamp = Date.parse(new Date());
+        var date = new Date(timestamp);
+        var m = date.getMinutes();
+        console.log(m);
+        if(backTime == '00'){
+            time = (60 - m)*60;
+            console.log(time);
+        }else{
+            time = (parseInt(backTime) - parseInt(m))*60;
+            console.log(time);
+        }
+
+        var lastSecondData = arry.data.prev10[0];
+        console.log(lastSecondData);
+        var timeId = lastSecondData.no;
+        // var timeId = '20180918066';
+        var timeA = lastSecondData.number.split(',')[0];
+        var timeB = lastSecondData.number.split(',')[1];
+        var timeC = lastSecondData.number.split(',')[2];
+        var timeAll = parseInt(lastSecondData.number.split(',')[0]) + parseInt(lastSecondData.number.split(',')[1]) + parseInt(lastSecondData.number.split(',')[2]);
+        var data= {
+            "id":timeId,
+            "a":timeA,
+            "b":timeB,
+            "c":timeC,
+            "total":timeAll,
+            "jgtime":time,
+        };
+        $('#resultA').text(timeA);
+        $('#resultB').text(timeB);
+        $('#resultC').text(timeC);
+        $('#resultTotal').text(timeAll)
+        console.log(data);
+        game.qishu = data.id;
+        randerVideo(data,'isNext');
+        randerResault(data);
+        //--------
+        var html = '';
+        var a;
+        for(var i =0; i<arry.data.prev10.length;i++){
+            a = parseInt(arry.data.prev10[i].number.split(',')[0]) + parseInt(arry.data.prev10[i].number.split(',')[1]) + parseInt(arry.data.prev10[i].number.split(',')[2]);
+
+
+            html += '<tr class="text-c"><td style="width: 28%">'+ arry.data.prev10[i].no +'</td><td style="width: 34%"><b   class="blueC getColor_'+ a +'" id="getColor_'+ a +'">'+ arry.data.prev10[i].number.split(',')[0] +'</b><b class="blueC getColor_'+ a +'" id="">'+ arry.data.prev10[i].number.split(',')[1] +'</b><b class="blueC getColor_'+ a +'" id="">'+ arry.data.prev10[i].number.split(',')[2] +'</b></td><td style="width: 15%"><b class="blueC getColor_'+ a +'" id="">'+  a +'</b></td><td style="width: 23%">'+ arry.data.prev10[i].time +'</td></tr>';
+
+        };
+        $('.getData').html(html);
+
+
+
+        if( str == '1' ){
+            console.log('走没走')
+            gameOpen = true
+            time = $('#waiting').attr('time');
+            djs(time);
+            $('#headTwo').show()
+        } else {
+            console.log(time + '这时候干了')
+            gameOpen = false
+            //time = str
+            $('#headOne').show()
+            s(time);
+        }
+        var number = $('#qishu').html();
+        initVideo(time,data)
+        initDropList(number);
+        $("#dropBox li a").on("click",
+            function() {
+                var qishu = $(this).html();
+                selectQishu(qishu);
+            });
+        game.resize()
+        $(window).resize(function(){
+            game.resize()
+        })
+    });
+    var game  = {
+        qishu:$('#qishu').text()
+    };
+    game.resize = function(){
+        //var WW = $(window).width();
+        var wrap = $('#vedioContentWrap');
+        var WW = wrap.width();
+        var vedioContent = $('.vedioContent');
+        var VW = vedioContent.width();
+        var VH= vedioContent.height();
+        var scale = 1;
+        if(WW < VW){
+            scale = WW/VW;
+        }else {
+            scale = 1
+        }
+        wrap.css({'height':scale * VH});
+        vedioContent.css({'transform':'scale('+ scale+')','-webkit-transform':'scale('+ scale+')'})
+    }
+    game.kaijiang = function(){
+        console.log(0)
+        var qishu = parseInt($("#qishu").html());
+        var id = 'kuai3';
+        // var url = "/index.php?s=/home/index/querynext.html"
+        var url = '';
+        console.log(url);
+        // $('.resultA').html('4');
+        // $('.resultB').html('5');
+        // $('.resultC').html('5');
+
+        //模拟色子
+        // var data= {
+        //     "id":'1000',
+        //     "a":6,
+        //     "b":6,
+        //     "c":6,
+        //     "total":18,
+        //     "jgtime":5,
+        // };
+        // console.log(data);
+        //     // game.qishu = data.id;
+        //     randerVideo(data,'isNext');
+        //     randerResault(data);
+        // randerResault(data);
+
+
+        //刷新下面的列表
+        $('.getData').html('');
+        var arry = {"status":1,"data":{"prev10":[{"date_time":"2018-09-28 10:00:00","no":"201809281000","number":"4,5,5","date":"2018-09-28","time":"10:00:00"},{"date_time":"2018-09-28 10:10:00","no":"201809281010","number":"6,3,4","date":"2018-09-28","time":"10:10:00"},{"date_time":"2018-09-28 10:20:00","no":"201809281020","number":"4,4,6","date":"2018-09-28","time":"10:20:00"},{"date_time":"2018-09-28 10:30:00","no":"201809281030","number":"3,3,4","date":"2018-09-28","time":"10:30:00"},{"date_time":"2018-09-28 10:40:00","no":"201809281040","number":"6,2,4","date":"2018-09-28","time":"10:40:00"},{"date_time":"2018-09-28 10:50:00","no":"201809281050","number":"4,6,4","date":"2018-09-28","time":"10:50:00"},{"date_time":"2018-09-28 11:00:00","no":"201809281100","number":"2,6,3","date":"2018-09-28","time":"11:00:00"},{"date_time":"2018-09-28 11:10:00","no":"201809281110","number":"5,3,6","date":"2018-09-28","time":"11:10:00"},{"date_time":"2018-09-28 11:20:00","no":"201809281120","number":"6,4,1","date":"2018-09-28","time":"11:20:00"},{"date_time":"2018-09-28 11:30:00","no":"201809281130","number":"6,4,4","date":"2018-09-28","time":"11:30:00"}],"next1":{"date_time":"2018-09-29 10:00:00","no":"201809291000","number":"2,2,5","date":"2018-09-29","time":"10:20:00"}},"message":"operate success"};
+
+        //倒计时的色子
+        var lastData = arry.data.next1;
+        console.log(lastData);
+        var timeId = lastData.no;
+        // var timeId = '20180918066';
+        var timeA = lastData.number.split(',')[0];
+        var timeB = lastData.number.split(',')[1];
+        var timeC = lastData.number.split(',')[2];
+        var timeAll = parseInt(lastData.number.split(',')[0]) + parseInt(lastData.number.split(',')[1]) + parseInt(lastData.number.split(',')[2]);
+        var data= {
+            "id":timeId,
+            "a":timeA,
+            "b":timeB,
+            "c":timeC,
+            "total":timeAll,
+            "jgtime":600,
+        };
+
+        game.qishu = data.id;
+
+        //执行方法
+        randerVideo(data,'isNext');
+        randerResault(data);
+
+
+
+        //下面的列表
+        var html = '';
+        var a;
+        for(var i =0; i<arry.data.prev10.length;i++){
+           a = parseInt(arry.data.prev10[i].number.split(',')[0]) + parseInt(arry.data.prev10[i].number.split(',')[1]) + parseInt(arry.data.prev10[i].number.split(',')[2]);
+
+
+            html += '<tr class="text-c"><td style="width: 28%">'+ arry.data.prev10[i].no +'</td><td style="width: 34%"><b   class="blueC getColor_'+ a +'" id="getColor_'+ a +'">'+ arry.data.prev10[i].number.split(',')[0] +'</b><b class="blueC getColor_'+ a +'" id="">'+ arry.data.prev10[i].number.split(',')[1] +'</b><b class="blueC getColor_'+ a +'" id="">'+ arry.data.prev10[i].number.split(',')[2] +'</b></td><td style="width: 15%"><b class="blueC getColor_'+ a +'" id="">'+  a +'</b></td><td style="width: 23%">'+ arry.data.prev10[i].time +'</td></tr>';
+
+        };
+        $('.getData').html(html);
+
+
+        $.ajax({
+            url: '',
+            type: "get",
+            async: true,
+            dataType:"json",
+            // data: {
+            //     qishu:Number(game.qishu) + 1
+            // },
+            success: function(data) {
+                console.log('请求接口');
+
+
+                // if(data.status == 1){
+                //     window.location.reload();
+                //     game.qishu = data.id;
+                //     game.randerVideo(data,'isNext');
+                //     game.randerResault(data);
+                // }else{
+                //     setTimeout(function() {
+                //         game.kaijiang();
+                //     }, 1000);
+                //
+                // }
+            },
+            error: function(data) {
+                // setTimeout(function() {
+                //     game.kaijiang();
+                // }, 1000);
+            },
+        });
+    };
+    // game.kaijiang();
+    function randerVideo(data,isNext){
+        //var time = new Date().getTime() - data.time;
+        console.log('这里调用了stopVideo')
+        console.log(data);
+        var params = {
+            preDrawCode: [data.a,data.b,data.c],
+            sumNum: data.total,
+            sumBigSmall: data.total < 11 ? '小' : '大',
+            drawIssue: Number(data.id) + 1,//期数
+            drawTime: data.jgtime,//下期开奖时间
+            seconds: data.jgtime,//倒计时
+            danShuang:data.total % 2 == 0 ? '双' : '单'
+        };
+        console.log(params)
+        // var qs = data.id && data.id.substring(data.id.length-3 ,data.id.length) || '0'
+        // var qs = data.id && data.id.substring(data.id.length-4 ,data.id.length) || '0';
+        var qs = data.id ;
+        $("#videobox").find(".nowDraw").text(qs);
+        k3v.stopVideo(params,isNext)
+    }
+    function initVideo(time,data){
+        console.log(data);
+        console.log('time' + time)
+        // var total = $('#resultTotal').text();
+        var total = data.total;
+        var params = {
+            // a:$('#resultA').text() || '0',
+            // b:$('#resultB').text()|| '0',
+            // c:$('#resultC').text() || '0',
+            // jgtime:Number(time),
+            // id:game.qishu,
+            // total:Number(total),
+            a:data.a || '0',
+            b:data.b|| '0',
+            c:data.c || '0',
+            jgtime:data.jgtime,
+            id:game.qishu,
+            total:data.total,
+        }
+        console.log(params);
+        randerVideo(params)
+    }
+     function randerResault(res,isSearch){
+         console.log('调用');
+        if(!isSearch){
+            $("#dropBox").prepend('<li class="newest-time"><a href="javascript:;">'+res.id+'</a></li>')
+            $("#qishu").text(res.id);
+        }
+        var html = '<div class="r1">' + '<span class="cyanBlue">' + res.a + '</span>' + '<label class="">+</label>' + '<span class="cyanBlue">' + res.b + '</span>' + '<label class="">+</label>' + '<span class="cyanBlue">' + res.c + '</span>' + '<label class="">和值</label>' + '<span class="skyBlue">' + res.total + '</span>' + '</div>' + '<div class="r2">';
+         // var html = '<div class="r1">' + '<span class="cyanBlue">3</span>' + '<label class="">+</label>' + '<span class="cyanBlue">3</span>' + '<label class="">+</label>' + '<span class="cyanBlue">3</span>' + '<label class="">和值</label>' + '<span class="skyBlue">9</span>' + '</div>' + '<div class="r2">';
+        if (res.total < 11) {
+            html += '<span class="badge blue-info">小</span>';
+        } else {
+            html += '<span class="badge blue-info">大</span>';
+        }
+        if (res.total % 2 == 0) {
+            html += '<span class="badge blue-info">双</span>';
+        } else {
+            html += '<span class="badge blue-info">单</span>';
+        }
+        html += '</div>';
+        $("#result").html(html);
+        $("#selectQishu").html(res.id);
+        if( res.bool == true ){
+            setTimeout(function() {
+                window.location.reload();
+            },8000);
+        }
+    }
+    // function djs(s) {
+    //     console.log('这地方开始调用外部函数');
+    //     console.log(s);
+    //     time(s);
+    //     clearInterval(mker);
+    //     mker = setInterval(function() {
+    //         time(s);
+    //         if(s == 25 && ifopen){
+    //             // document.getElementById('audioRing').play()
+    //         }
+    //         if (s == 0) {
+    //             clearInterval(mker);
+    //             $("#waiting").show();
+    //             $("#result").hide();
+    //             setTimeout(function() {
+    //                     game.kaijiang()
+    //                 },
+    //                 1000);
+    //         } else {
+    //             s--;
+    //         }
+    //     },1000);
+    // }
+
+    function s(s)
+    {
+        var maker = setInterval(function(){
+            var theTime = parseInt(s);// 秒
+            var theTime1 = 0;// 分
+            var theTime2 = 0;// 小时
+            if(theTime > 60) {
+                theTime1 = parseInt(theTime/60);
+                theTime = parseInt(theTime%60);
+                if(theTime1 > 60) {
+                    theTime2 = parseInt(theTime1/60);
+                    theTime1 = parseInt(theTime1%60);
+                }
+            }
+            $('#s').html(theTime>9?theTime:'0'+theTime);
+            if(theTime1 > 0) {
+                $('#min').html(theTime1>9?theTime1:'0'+theTime1);
+            } else {
+                $('#min').html('00');
+            }
+
+            if(theTime2 > 0) {
+                $('#shi').html(theTime2>9?theTime2:'0'+theTime2);
+            } else {
+                $('#shi').html('00');
+            }
+
+            if (s == 0) {
+                clearInterval(maker);
+                $('.dataIsCome').show();
+                $('.getData').hide();
+                setTimeout(function() {
+                        game.kaijiang();
+                        $('.getData').show();
+                        $('.dataIsCome').hide();
+                    },
+                    6000);
+            } else {
+                s--;
+            }
+        }, 1000);
+    }
+
+    function time(s)
+    {
+        var min = Math.floor(s / 60);
+        if (min < 10) {
+            min = "0" + min;
+        }
+        var sec = s % 60;
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+        var timeStr = "<span>下一期:</span><b>" + min + "</b><span>分</span>" + "<b>" + sec + "</b><span>秒</span>";
+        $("#djs").html(timeStr);
+    }
+
+
+    function initDropList(qishu) {
+        var list = "";
+        var int = $('.newest-time');
+        for (var i = 0; i < int.length; i++) {
+            list += '<li class="newest-time"><a href="javascript:;">' + (qishu - i) + '</a></li>';
+        }
+        $('#dropBox').html(list);
+    }
+
+    function selectTab(name) {
+        if (name=='zoushi'){
+            $('canvas').show();
+        }else{
+            $('canvas').hide();
+        }
+        $(".tab-nav").removeClass("btn-facebook");
+        $("#tab-" + name).addClass("btn-facebook");
+        $(".tab-nav .arrow").hide();
+        $("#tab-" + name + " .arrow").show();
+        $(".tab-content").hide();
+        $("#content-" + name).show();
+    }
+    function selectQishu(qishu) {
+        var int = $('.newest-time');
+        var maxQishu = parseInt($('#qishu').html());
+        var minQishu = maxQishu - int.length+1;
+        if (qishu == 1 || qishu == -1) {
+            var selectQishu = parseInt($('#selectQishu').html());
+            qishu = selectQishu + qishu;
+        }
+        if (qishu == minQishu) {
+            $("#prevBtn").attr("disabled", true);
+        } else {
+            $("#prevBtn").attr("disabled", false);
+        }
+        if (qishu == maxQishu) {
+            $("#nextBtn").attr("disabled", true);
+        } else {
+            $("#nextBtn").attr("disabled", false);
+        }
+        if (qishu < minQishu || qishu > maxQishu) {
+            return false;
+        }
+        var url = "/Index/queryFind.html";
+        console.log('倒计时到了');
+        $.post(url, {
+                qishu: qishu
+            },
+            function(res) {
+                randerResault(res,true)
+            },
+            "json");
+    }
+
+
+</script>
+</body></html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+html{
+    font-size: 16px;
+}
+.logo-64{
+    background: url("../img/pcai-logo.svg") no-repeat;
+    height:64px;
+    width:64px;
+}
+
+#pageTopTitle {
+    height:48px;
+    line-height:48px;
+    font-size:18px;
+    padding:0 10px;
+}
+#pageTopTitle .left-info{
+    -moz-background-size:48px 48px;
+    -webkit-background-size:48px 48px;
+    background-size : 48px 48px;
+    padding-right:58px;
+    line-height:24px;
+    font-size:16px;
+}
+
+#pageTopTitle .titlebox{
+    line-height:48px;
+    font-size:32px;
+}
+#pageBottomTitle{
+    height:48px;
+    line-height:48px;
+    font-size:26px;
+}
+
+#pageBottomTitle .sys-notice-wrapper {
+    margin-left: 160px;
+    margin-right: 310px;
+}
+
+#echartHeaderColumns, #echartContent {
+    width: 1200px;
+}
+#supportInfoTD {
+    width: 360px;
+}
+#supportInfo {
+    background: url("../img/pcai-logo.svg") no-repeat left center;
+    -moz-background-size:48px 48px;
+    -webkit-background-size:48px 48px;
+    background-size : 48px 48px;
+    padding-left:54px;
+    float:right;
+    font-size:16px;
+    line-height: 24px;
+    height:48px;
+}
+
+#header{
+    height:64px;
+}
+
+#timerInfo {
+    font-size: 16px;
+    width:160px;
+}
+
+#timerInfoTD{
+    width:180px;
+}
+#topMissBox {
+    font-size: 16px;
+}
+#msgboxTD{
+    font-size:16px;
+}
+
+#recoMarquee {
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+}
+.row-46 .grid-body .sum-dqyl .cell ,
+.row-46 .grid-body .sum-lr .cell{
+    font-size: 16px;
+}
+.marquee-sibling{
+    padding: 0 50px;
+}
+
+.rotate-left{
+    -moz-transform:rotate(-90deg) translate(420px, 420px);
+    -webkit-transform:rotate(-90deg) translate(420px, 420px);
+    transform:rotate(-90deg) translate(420px, 420px);
+}
+.rotate-right{
+    -moz-transform:rotate(90deg) translate(-420px, -420px);
+    -webkit-transform:rotate(90deg) translate(-420px, -420px);
+    transform:rotate(90deg) translate(-420px, -420px);
+}
+.rotate-reverse{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+#sysMsgBox{
+    font-size: 16px;
+    line-height: 20px;
+}

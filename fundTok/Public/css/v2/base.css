@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: myhotnum1;
+    src:url(../font/myhotnum1.ttf) format("opentype");
+}
+
+#pageTopTitle {
+    color:#fff;
+    background: #c45659;
+}
+#pageTopTitle .left-info{
+    float:left;
+    background: url("../img/lottery-logo.png") no-repeat right center;
+}
+#pageTopTitle .right-info{
+    float:right;
+    height:100%;
+}
+#pageTopTitle .titlebox{
+    height:100%;
+    text-align: center;
+    color:#fff;
+    line-height:48px;
+    font-size:32px;
+    font-weight: bold;
+}
+#pageBottomTitle {
+    padding: 0 5px;
+}
+#echart > #echartAnchor{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1px;
+    height:1px;
+}
+#popupBox,#fixedAdBox{
+    width:100%;
+}
+#userNotice {
+    background: #fff;
+    color: #000;
+}
+#resultPlayerBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+#chartpart {
+    position: relative;
+    height:100%;
+}
+#toppart,#popupAdBox{
+    z-index: 100;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#bottompart{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+#echartHeaderColumns, #echartContent{
+    overflow: hidden;
+}
+
+
+.cell{
+    margin:0px auto;
+}
+.grid-body .cell{
+    overflow: hidden;
+}
+
+
+
+.cell.hot{
+    font-weight: bold;
+    font-family:myhotnum1 ,Impact, arial, Verdana,'Droid Sans Bold','Droid Sans';
+}
+.cell.hot i{
+    display:none;
+}
+.cell.hot em{
+    display:block;
+}
+
+.column-dqh .first,
+.column-qh .first{
+    background:#063;
+    color:#fff;
+}
+.miss {
+    color: #ccc;
+}
+html{
+    font-size: 16px;
+    overflow:hidden;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+
+}
+body{
+    font-size: 12px;
+}
+em{
+    font-style:normal;
+    padding:0;
+    margin:0;
+}
+#echart{
+    position: relative;
+    background:#d2f0d7;
+}
+
+/*
+#echart > div{
+	clear:both;
+	width: 100%;
+}
+*/
+#header,#footer{
+    z-index: 1;
+    color:#fff;
+}
+#header{
+    display:none;
+    background: #0331a0;
+
+}
+#cominfo{
+    float:left;
+}
+#footer{
+    background: #c45659;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+#timerInfo  {
+    float:left;
+    overflow: hidden;
+    width: 100%;
+}
+#timerInfo {
+    font-weight: bold;
+}
+#msgboxTD{
+    border-left: 1px solid #fff;
+    padding:0 10px;
+}
+#msgbox{
+    text-align:center;
+}
+#msgbox-inner{
+    margin:0;
+    padding:0;
+}
+#msgbox-inner li{
+    display: none;
+    list-style: outside none none;
+}
+#msgbox-inner li.show{
+    display: block;
+}
+
+#supportInfo{
+    background: url("../img/pcai-logo.svg") no-repeat left center;
+    -moz-background-size:32px 32px;
+    -webkit-background-size:32px 32px;
+    background-size : 32px 32px;
+    padding-left:36px;
+    float:right;
+    font-size:16px;
+}
+#supportInfoTD{
+    width: 310px;
+    padding-right:5px;
+}
+
+#content{
+    bottom:100px;
+    left:0;
+    overflow:hidden;
+    background:#bbffca;
+}
+
+#cominfo > div{
+    float: left;
+    font-size: 25px;
+    line-height: 32px;
+    margin-right:5px;
+    text-align: center;
+}
+#echartBody{
+    position:relative;
+
+    overflow: hidden;
+}
+.column {
+    float:left;
+    background:#e2f5e6;
+    border-right: 1px solid #808080;
+}
+.column .grid-header {
+    color:#49a4b6;
+}
+
+
+.column .hot {
+    color: #7a056b;
+}
+
+.grid table{
+    border:none;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+}
+.grid-header{
+    border-top:1px solid #808080;
+    border-left:1px solid #808080;
+    border-bottom:1px solid #808080;
+    height: 50px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.grid-body{
+    border:1px solid #808080;
+    border-right:none;
+    position:relative;
+}
+.grid td{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+.grid-header td{
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+}
+.grid-header td:last-child{
+    border-right: none;
+
+}
+
+
+.grid-header tr:last-child td{
+    border-bottom: none;
+}
+.grid-body td{
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin: 0;
+    font-weight:normal;
+    padding: 0;
+}
+.grid-body td:last-child {
+    border-right: none;
+}
+.grid-body .topempty td {
+    border-bottom: none;
+}
+tr.hr td{
+    border-bottom: 2px solid #ccc;
+}
+
+
+.sum-lr td{
+    color:#bd5151;
+    background:#bbffca;
+}
+
+col {
+    /*
+    width:23px;
+    */
+}
+
+.lh {
+    background:#94f8e3;
+}
+
+.yl{
+    color:#a4e1ae;
+    font-size:16px;
+}
+.lr-1,.lr-2,.lrqs{
+    color:#fff;
+}
+.lr-2{
+    background:#ff6600;
+}
+.lrqs{
+    background:#ff0000;
+}
+.lr-1{
+    background:#63cb75;
+}
+
+.hide{
+    display:none;
+}
+
+tr.fgx > td {
+    border-bottom-color: #808080;
+}
+
+.column.bg1{
+    background:#e2f5e6;
+}
+.column.bg2{
+    background:#F5F5DC;
+}
+
+.column.hot1 .hot{
+    color:#191970;
+}
+.column.hot2 .hot{
+    color:#7a056b;
+}
+.column.hot3 .hot{
+    color:#ff0000;
+}
+
+
+
+
+
+#lineCanvas{
+    position:absolute;
+    left:0;
+    top:0;
+}
+.lineCanvas{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.column-dqh .grid-body{
+    color:#bd5151;
+}
+
+tr.sum-dqyl {
+    color: black;
+}
+#topMissBox{
+    color:#469d86;
+    background:#ffe7da;
+    text-align:center;
+    font-family:verdana,arial;
+}
+#topMissBox table {
+    border-left: 1px solid #469d86;
+    border-top: 1px solid #469d86;
+}
+#topMissBox td{
+    border-bottom: 1px solid #469d86;
+    border-right: 1px solid #469d86;
+}
+#recoMarquee{
+    background:#2a050c;
+    color:#fff;
+}
+.marquee-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.marquee-sibling,.marquee-content{
+    left:0;
+    top:0;
+    position: absolute ;
+    height:100%;
+}
+.marquee-sibling{
+    background: url("../img/speaker.svg") no-repeat left center #2a050c;
+    padding:0 20px;
+    z-index:100;
+}
+.marquee-content{
+    z-index:1;
+    white-space:nowrap;
+}
+
+
+#lightness_mask{
+    background: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index:20000;
+}
+
+.show-web-frame{
+    position: absolute;
+    border:none;
+
+}
+
+#debug-console{
+    display:none;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:20000;
+    padding:15px;
+    font-size:14px;
+    height:30%;
+    width:95%;
+    overflow: auto;
+}
+#debug-console .linenum{
+    color:red;
+    padding-right:15px;
+}
+#notificationBox{
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.sys-msg-error{
+    background-color: red;
+    color:white;
+    font-weight:bold;
+    font-size:26px;
+}
+
+.viewslider{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    background:#fff;
+    color:black;
+    list-style: outside none none;
+    text-align: center;
+    overflow: hidden;
+}
+.viewslider > li {
+    display:none;
+}
+.viewslider > li.act {
+    display:block;
+}
+.viewslider > li > img{
+    padding: 0;
+    margin:0;
+}
+
+#sysMsgBox{
+    background:#fff;
+    color:black;
+    text-align: center;
+    font-size: 16px;
+}
+ul.msg-slider, .msg-slider li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.msg-slider li{
+    display:none;
+}
+.msg-slider li.show{
+    display:block;
+}
+
+.row-84 .bempty{
+    display:none;
+}
+.drawline .conf-column{
+    display: none;
+}
+.drawline .conf-line{
+    opacity:0.4 ;
+    color:#000 ;
+    font-size:1px ;
+    border:1px solid #000 ;
+    box-sizing:border-box ;
+}
+
+.scroll-y{
+    position:absolute;
+    left:0;
+    bottom:0;
+    /*overflow-y : auto;*/
+}
+.body-part{
+    overflow: hidden;
+}
+.echart-mask{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 8000;
+}
+.echart-mask .mask-bg{
+    position: absolute;
+    left:0;
+    top:0;
+    background:#000;
+    opacity:0.3;
+    width:100%;
+    height:100%;
+    z-index: 8001;
+}
+.echart-mask .mask-body{
+    margin: -21px -21px;
+    text-align: center;
+    z-index: 8002;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

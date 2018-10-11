@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.cell{
+    width:22px;
+    font-size:17px;
+}
+
+.grid-body .cell{
+    height:17px;
+    line-height:17px;
+}
+
+.cell.hot{
+    line-height:13px;
+    font-size:28px;
+}
+
+
+#logo{
+    background: url("../img/pcai-logo-64.jpg") no-repeat;
+    height:64px;
+    width:64px;
+}
+
+#echart .topempty > td > .cell {
+    height: 50px;
+}
+
+.row-84 .grid-body .cell{
+    height:20px;
+    line-height:20px;
+}
+.row-66 .grid-body .cell{
+    height:26px;
+    line-height:26px;
+}
+
+.row-46 .grid-body .cell{
+    height:37px;
+    line-height:37px;
+    font-size:24px;
+}
+.row-46 .grid-body .cell.hot{
+    font-size: 50px;
+    line-height: 30px;
+}
